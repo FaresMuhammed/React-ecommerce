@@ -1,0 +1,39 @@
+/* css we use more than one time */
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+
+body {
+  font-family: "Roboto", serif !important;
+}
+
+.f-cairo{
+  font-family: "Cairo", serif !important;
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  margin: 0 auto;
+} 
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-100{
+  height: 100vh;
+}
+
+.row .col-12 {
+  width: 100%;
+}
+
+.row .col-6{
+  width: 50%;
+}

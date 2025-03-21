@@ -1,0 +1,22 @@
+.btn {
+    background-color: white;
+    outline: none;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #297fff;
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    cursor: pointer;
+    transition: .4s;
+    background-color: #297fff;
+    display: flex;
+    color: white;
+}
+
+.btn:hover{
+    color: #297fff;
+    background-color: white;
+}
+

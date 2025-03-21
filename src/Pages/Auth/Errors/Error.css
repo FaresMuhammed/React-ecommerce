@@ -1,0 +1,29 @@
+.error {
+    width: 100%;
+    height: 100vh;
+    margin-top: 15%;
+}
+
+.e403 {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.err {
+    font-size: 100px;
+    font-weight: bold;
+    
+}
+
+.errr{
+    color: black;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.errrr{
+    color: black;
+    font-size: 13px;
+}
