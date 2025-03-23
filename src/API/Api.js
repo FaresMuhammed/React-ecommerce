@@ -1,4 +1,4 @@
-export const URL = `http://127.0.0.1:8000/api`
+export const URL = `https://react-ecommerce-backend-production-f88d.up.railway.app/api`
 // AUTH
 export const REGISTER = 'register'
 export const LOGIN = 'login'
