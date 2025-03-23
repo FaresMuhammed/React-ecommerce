@@ -45,7 +45,7 @@ export default function NavBar() {
     const [Categories , setCategories] = useState([])
     useEffect(() => {
         Axios.get(`${CATEGORIES}`)
-        .then( (res) => setCategories(res.data.data.slice(-7)))  // to get last 8 categories
+        .then( (res) => setCategories(res.data.slice(-7)))  // to get last 8 categories
         .finally ( () => setloading(false))
     } , [] )
     console.log(Categories);

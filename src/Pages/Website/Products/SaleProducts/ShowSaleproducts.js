@@ -23,7 +23,7 @@ export default function Saleproducts() {
         <Product
             id={product.id}
             title={product.title} 
-            img={product.images[0].image} 
+            img={product?.images[0]?.image} 
             discount={product.discount} 
             price={product.price}
             description={product.description}

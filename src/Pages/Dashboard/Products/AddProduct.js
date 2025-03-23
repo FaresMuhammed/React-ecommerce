@@ -17,7 +17,7 @@ export default function AddProduct() {
     const [Categoriess , setCategoriess] = useState([])
     useEffect ( () => {
         Axios.get(`/${CATEGORIES}`)
-        .then( data => setCategoriess(data.data.data))
+        .then( data => setCategoriess(data.data))
         .catch(err => (err) )
     } , [] )
     console.log(Categoriess);

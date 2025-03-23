@@ -14,7 +14,7 @@ export default function Websitecategories() {
     Axios.get(`${CATEGORIES}`).then((res) => setCategories(res.data.data))
     .finally( () => setLoading(false))
     } , [] )
-    const showCategories = categories.map((item) => (
+    const showCategories = categories?.map((item) => (
         <div className="col-lg-2 col-md-6 col-12 bg-transparent border-0 cat">
             <div className="m-1 bg-white border d-flex align-items-center justify-content-start gap-3 rounded py-2 h-100">
                 <img className="ms-3" width="80px"  alt="just an img" 
