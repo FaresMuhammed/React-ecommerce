@@ -11,14 +11,14 @@ export default function Websitecategories() {
 
     const [categories, setCategories] = useState([]);
     useEffect(() => {
-    Axios.get(`${CATEGORIES}`).then((res) => setCategories(res.data.data))
+    Axios.get(`${CATEGORIES}`).then((res) => setCategories(res.data))
     .finally( () => setLoading(false))
     } , [] )
     const showCategories = categories?.map((item) => (
         <div className="col-lg-2 col-md-6 col-12 bg-transparent border-0 cat">
-            <div className="m-1 bg-white border d-flex align-items-center justify-content-start gap-3 rounded py-2 h-100">
+            <div className="m-1 bg-white border d-flex align-items-center justify-content-start gap-3 rounded py-2 h-100" style={{overflow:'hidden'}}>
                 <img className="ms-3" width="80px"  alt="just an img" 
-                    src={item.image} 
+                    src={"https://react-ecommerce-backend-production-f88d.up.railway.app" + item.image} 
                 />
                 <p className="m-0">
                     {Slicedata(item.title , 10)}

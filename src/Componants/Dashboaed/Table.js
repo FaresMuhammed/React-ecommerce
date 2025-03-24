@@ -50,13 +50,15 @@ export default function Tables(props) {
             {props.Header.map((item2 , key2) =>(  // map in map(map on header to get $users's object value from $UsersHeader)  ,,  // item2.keyy have the value
             <td key={key2}>
                 {
-                    item2.keyy === 'image' ? <img width='80px' src={ 
-                    "https://react-ecommerce-backend-production-f88d.up.railway.app" + 
-                    item[item2.keyy]}/>  
+                    item2.keyy === 'image' ? 
+                    <img width='80px' src={ 
+                        "https://react-ecommerce-backend-production-f88d.up.railway.app" + 
+                        item[item2.keyy]}
+                    />  
 
                     :item2.keyy === 'images' ? (
                     <div>
-                        {item[item2.keyy].map((img) => <img style={{ width: '80px' , display: 'flex' , flexDirection: 'column' , marginBottom: '10px'}} src={img.image}/>)}
+                        {item[item2.keyy].map((img) => <img style={{ width: '80px' , display: 'flex' , flexDirection: 'column' , marginBottom: '10px'}} src={"https://react-ecommerce-backend-production-f88d.up.railway.app" + img.image}/>)}
                     </div>)
 
                     : item2.keyy === 'created_at' || item2.keyy === 'updated_at' ? TransformDate(item[item2.keyy])

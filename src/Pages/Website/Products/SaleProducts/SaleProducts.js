@@ -35,7 +35,7 @@ export default function Product(props) {
                                 SALE
                             </p>}
                             <div className="w-100" 
-                                style={{backgroundImage: `url('${props.img}')`,
+                                style={{backgroundImage: `url('${"https://react-ecommerce-backend-production-f88d.up.railway.app" + props.img}')`,
                                         backgroundPosition: 'center',
                                         backgroundSize: 'cover',
                                         height: '200px',

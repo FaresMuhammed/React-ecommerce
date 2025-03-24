@@ -25,7 +25,7 @@ export default function SingeProduct() {
         Axios.get(`${PRODUCT}/${id}`)
         .then((res) => {
             setProductImage(res.data[0].images.map( (img) => 
-                {return { original: img.image, thumbnail: img.image }}
+                {return { original: "https://react-ecommerce-backend-production-f88d.up.railway.app" + img.image, thumbnail: "https://react-ecommerce-backend-production-f88d.up.railway.app" + img.image }}
             )
         )
         setProduct(res.data[0])
@@ -120,9 +120,7 @@ export default function SingeProduct() {
                         
                     </div>
                 </>
-
                 )
-                
             }
         </div> 
 

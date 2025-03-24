@@ -15,12 +15,12 @@ export default function Landing(){
                     You are welcomed!
                 </h2>
 
-            <Link
+            {/* <Link
                 to="/shop"
                 className="btn btn-primary mt-3 py-3 px-4 fw-bold text-light"
                 >
                 Shop Now
-            </Link>
+            </Link> */}
             </div>
             </Container>
         </div>
